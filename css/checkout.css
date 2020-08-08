@@ -1,0 +1,170 @@
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+a { display: block; text-decoration: none; }
+
+img { display: block; max-width: 100%; height: auto; }
+
+.container { margin: 0 auto; max-width: 940px; }
+
+.header { display: flex; justify-content: space-between; align-items: center; margin: 30px 0px; }
+
+@media (max-width: 940px) { .header { justify-content: space-around; } }
+
+.header .dehaze { display: none; height: 24px; }
+
+@media (max-width: 940px) { .header .dehaze { display: block; } }
+
+@media (max-width: 940px) { .header .logo { display: none; } }
+
+.header .logo-mobile { display: none; }
+
+@media (max-width: 940px) { .header .logo-mobile { display: block; width: 35%; } }
+
+.header .nav { display: flex; width: 320px; justify-content: space-between; align-items: center; }
+
+@media (max-width: 940px) { .header .nav { width: 24px; } }
+
+.header .nav a { color: #3F5D45; font-size: 16px; line-height: 22px; font-weight: bold; padding: 20px; }
+
+@media (max-width: 940px) { .header .nav-text { display: none; } }
+
+.header .nav-text:hover { border-left: 1px #3F5D45 solid; }
+
+.header .nav-img { width: 24px; }
+
+.header .nav-img:hover { border-left: 1px #3F5D45 solid; }
+
+.subscribe { display: flex; justify-content: space-evenly; background: #3F5D45; padding: 40px 0px; }
+
+@media (max-width: 940px) { .subscribe { flex-direction: column; align-items: center; } }
+
+.subscribe-left { display: flex; align-items: center; }
+
+@media (max-width: 940px) { .subscribe-left { margin-bottom: 30px; } }
+
+.subscribe-left img { width: 40px; margin-right: 20px; }
+
+.subscribe-left h2 { font-size: 24px; line-height: 33px; color: #EAF0ED; }
+
+.subscribe-right { display: flex; }
+
+.subscribe-right .mail { background: white url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat 20px; width: 266px; height: 56px; font-size: 20px; padding: 0px 0px 0px 50px; border: none; }
+
+.subscribe-right .btn { background: #FFE180; width: 24px; height: 24px; padding: 16px 20px; }
+
+.footer { display: flex; justify-content: space-around; background: #EAF0ED; padding: 30px 0px; }
+
+@media (max-width: 940px) { .footer { flex-direction: column; justify-content: start; padding-left: 30px; } }
+
+.footer-left { display: flex; flex-direction: column; justify-content: space-between; }
+
+@media (max-width: 940px) { .footer-left { margin-bottom: 23px; } }
+
+.footer-left .footer-logo { width: 171px; margin-bottom: 40px; }
+
+.footer-left .text { color: #3F5D45; font-size: 16px; line-height: 24px; margin-bottom: 30px; }
+
+.footer-left .icon { display: flex; }
+
+.footer-left .icon img { width: 32px; margin-right: 8px; }
+
+.footer-right { display: flex; flex-direction: column; color: #3F5D45; }
+
+@media (max-width: 940px) { .footer-right { margin-bottom: 23px; } }
+
+.footer-right h2 { writing-mode: vertical-rl; font-size: 20px; line-height: 40px; letter-spacing: 5px; font-weight: bolder; margin-bottom: 64px; }
+
+@media (max-width: 940px) { .footer-right h2 { display: none; } }
+
+.footer-right span { font-size: 16px; }
+
+.content { display: flex; justify-content: space-evenly; }
+
+.check { width: 400px; height: 366px; background: #3F5D45; padding: 30px; }
+
+@media (max-width: 768px) { .check { width: 100%; height: 422px; } }
+
+.check .title { display: flex; justify-content: space-between; margin-bottom: 30px; }
+
+.check .title h2 { font-size: 36px; color: #EAF0ED; }
+
+.check .title ul { display: flex; align-self: flex-end; }
+
+.check .title ul img { width: 20px; }
+
+.check .title ul hr { height: 0px; width: 65px; }
+
+.check .option { display: flex; border: 1px solid #EAF0ED; width: 380px; height: 56px; font-size: 20px; text-align: center; line-height: 56px; margin-bottom: 30px; }
+
+@media (max-width: 768px) { .check .option { width: 100%; } }
+
+.check .option .electronic { width: 50%; background: #EAF0ED; color: #3F5D45; }
+
+.check .option .post { width: 50%; background: #3F5D45; }
+
+.check .option .post a { color: #EAF0ED; }
+
+.check .option .post a:hover { background: #EAF0ED; color: #3F5D45; transition: 0.4s; }
+
+.check-place { position: relative; }
+
+.check-place label { display: block; color: #EAF0ED; }
+
+.check-place label h2 { font-size: 20px; margin-bottom: 8px; }
+
+.check-place label input { height: 56px; width: 360px; font-size: 16px; padding-left: 20px; background: #EAF0ED; border: none; margin-bottom: 16px; }
+
+@media (max-width: 768px) { .check-place label input { width: 97%; } }
+
+.check-place .submit { position: absolute; left: -30px; width: 460px; height: 65px; font-size: 24px; color: #3F5D45; background: #FFE180; border: none; margin-top: 30px; }
+
+@media (max-width: 768px) { .check-place .submit { width: calc(100% + 60px); } }
+
+.check-place .submit:hover { background: #EAF0ED; transition: 0.4s; }
+
+.buy { display: flex; flex-direction: column; width: 300px; }
+
+@media (max-width: 768px) { .buy { display: none; } }
+
+.buy h2 { font-size: 24px; color: #8DA291; text-align: center; background: #EAF0ED; padding: 16px 0px; }
+
+.buy .summary { border: 1px solid #EAF0ED; margin-bottom: 20px; }
+
+.buy .summary .detail { display: flex; justify-content: space-between; padding: 16px 20px; font-size: 16px; line-height: 20px; color: #8DA291; }
+
+.buy .summary .detail .price { text-align: right; }
+
+.buy .summary .detail .total { padding: 16px 0px; font-size: 20px; font-weight: bold; }
+
+.buy .list { border: 1px solid #EAF0ED; margin-bottom: 60px; }
+
+.buy .list .item { display: flex; flex-direction: column; padding: 16px 20px; }
+
+.buy .list .item li { display: flex; margin-bottom: 16px; }
+
+.buy .list .item li .img-place { width: 120px; height: 80px; overflow: hidden; }
+
+.buy .list .item li .img-place .img-1 { margin-top: -35px; }
+
+.buy .list .item li .img-place .img-2 { margin-top: -35px; }
+
+.buy .list .item li .text { width: 120px; padding-top: 16px; padding-left: 20px; }
+
+.buy .list .item li .text h3 { font-size: 16px; line-height: 20px; color: #8DA291; }
+
+.buy .list .item li .text span { font-size: 20px; line-height: 20px; color: #8DA291; font-weight: bold; }
+/*# sourceMappingURL=checkout.css.map */

@@ -1,0 +1,186 @@
+.container{
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+    @include pad(){
+        justify-content: space-around;
+    }
+
+    .dehaze {
+        display: none;
+        height: 24px;
+        @include pad(){
+            display: block;
+        }
+    }
+
+    .logo{
+        @include pad(){
+            display: none;
+        }
+    }
+
+    .logo-mobile{
+        display: none;
+        @include pad(){
+            display: block;
+            width: 35%;
+        }
+    }
+    
+    .nav{
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+        align-items: center;
+        @include pad(){
+            width: 24px;
+        }
+
+        a{
+            color: #3F5D45;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        &-text{
+            @include pad(){
+                display: none;
+            }
+            &:hover{
+                border-left: 1px #3F5D45 solid;
+            }
+        }
+
+        &-img {
+            width: 24px;
+            &:hover{
+                border-left: 1px #3F5D45 solid;
+            }
+        }
+    }
+}
+
+.subscribe{
+    display: flex;
+    justify-content: space-evenly;
+    background: #3F5D45;
+    padding: 40px 0px;
+    @include pad(){
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-left{
+        display: flex;
+        align-items: center;
+        @include pad(){
+            margin-bottom: 30px;
+        }
+
+        img{
+            width: 40px;
+            margin-right: 20px;
+        }
+
+        h2{
+            font-size: 24px;
+            line-height: 33px;
+            color: #EAF0ED;
+        }
+    }
+
+    &-right{
+        display: flex;
+
+        .mail{
+            background: white url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat 20px;
+            width: 266px;
+            height: 56px;
+            font-size: 20px;
+            padding: 0px 0px 0px 50px;
+            border: none;
+        }
+
+        .btn {
+            background: #FFE180;
+            width: 24px;
+            height: 24px;
+            padding: 16px 20px;
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background: #EAF0ED;
+    padding: 30px 0px;
+    @include pad(){
+        flex-direction: column;
+        justify-content: start;
+        padding-left: 30px;
+    }
+
+    &-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include pad(){
+            margin-bottom: 23px;
+        }
+
+        .footer-logo{
+            width: 171px;
+            margin-bottom: 40px;
+        }
+
+        .text{
+            color: #3F5D45;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+
+        .icon{
+            display: flex;
+            img{
+                width: 32px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    &-right{
+        display: flex;
+        flex-direction: column;
+        color: #3F5D45;
+        @include pad(){
+            margin-bottom: 23px;
+        }
+
+        h2{
+            writing-mode: vertical-rl;
+            font-size: 20px;
+            line-height: 40px;
+            letter-spacing: 5px;
+            font-weight: bolder;
+            margin-bottom: 64px;
+            @include pad(){
+                display: none;
+            }
+        }
+
+        span{
+            font-size: 16px;
+        }
+    }
+}

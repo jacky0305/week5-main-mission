@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+a { display: block; text-decoration: none; }
+
+img { display: block; max-width: 100%; height: auto; }
+
+.container { margin: 0 auto; max-width: 940px; }
+
+.header { display: flex; justify-content: space-between; align-items: center; margin: 30px 0px; }
+
+@media (max-width: 940px) { .header { justify-content: space-around; } }
+
+.header .dehaze { display: none; height: 24px; }
+
+@media (max-width: 940px) { .header .dehaze { display: block; } }
+
+@media (max-width: 940px) { .header .logo { display: none; } }
+
+.header .logo-mobile { display: none; }
+
+@media (max-width: 940px) { .header .logo-mobile { display: block; width: 35%; } }
+
+.header .nav { display: flex; width: 320px; justify-content: space-between; align-items: center; }
+
+@media (max-width: 940px) { .header .nav { width: 24px; } }
+
+.header .nav a { color: #3F5D45; font-size: 16px; line-height: 22px; font-weight: bold; padding: 20px; }
+
+@media (max-width: 940px) { .header .nav-text { display: none; } }
+
+.header .nav-text:hover { border-left: 1px #3F5D45 solid; }
+
+.header .nav-img { width: 24px; }
+
+.header .nav-img:hover { border-left: 1px #3F5D45 solid; }
+
+.subscribe { display: flex; justify-content: space-evenly; background: #3F5D45; padding: 40px 0px; }
+
+@media (max-width: 940px) { .subscribe { flex-direction: column; align-items: center; } }
+
+.subscribe-left { display: flex; align-items: center; }
+
+@media (max-width: 940px) { .subscribe-left { margin-bottom: 30px; } }
+
+.subscribe-left img { width: 40px; margin-right: 20px; }
+
+.subscribe-left h2 { font-size: 24px; line-height: 33px; color: #EAF0ED; }
+
+.subscribe-right { display: flex; }
+
+.subscribe-right .mail { background: white url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) no-repeat 20px; width: 266px; height: 56px; font-size: 20px; padding: 0px 0px 0px 50px; border: none; }
+
+.subscribe-right .btn { background: #FFE180; width: 24px; height: 24px; padding: 16px 20px; }
+
+.footer { display: flex; justify-content: space-around; background: #EAF0ED; padding: 30px 0px; }
+
+@media (max-width: 940px) { .footer { flex-direction: column; justify-content: start; padding-left: 30px; } }
+
+.footer-left { display: flex; flex-direction: column; justify-content: space-between; }
+
+@media (max-width: 940px) { .footer-left { margin-bottom: 23px; } }
+
+.footer-left .footer-logo { width: 171px; margin-bottom: 40px; }
+
+.footer-left .text { color: #3F5D45; font-size: 16px; line-height: 24px; margin-bottom: 30px; }
+
+.footer-left .icon { display: flex; }
+
+.footer-left .icon img { width: 32px; margin-right: 8px; }
+
+.footer-right { display: flex; flex-direction: column; color: #3F5D45; }
+
+@media (max-width: 940px) { .footer-right { margin-bottom: 23px; } }
+
+.footer-right h2 { writing-mode: vertical-rl; font-size: 20px; line-height: 40px; letter-spacing: 5px; font-weight: bolder; margin-bottom: 64px; }
+
+@media (max-width: 940px) { .footer-right h2 { display: none; } }
+
+.footer-right span { font-size: 16px; }
+
+.banner { margin-bottom: 60px; }
+
+.product { display: flex; justify-content: space-between; }
+
+@media (max-width: 940px) { .product { flex-direction: column; } }
+
+.product .menu { text-align: center; font-size: 24px; line-height: 33px; font-weight: bold; width: 300px; }
+
+@media (max-width: 940px) { .product .menu { width: auto; max-width: 100%; margin-bottom: 30px; } }
+
+.product .menu h2 { background: #3F5D45; color: #EAF0ED; padding: 16px 0px 16px 0px; }
+
+.product .menu li { border: 1px solid #EAF0ED; }
+
+.product .menu li:hover { background: #EAF0ED; }
+
+.product .menu a { display: block; padding: 16px 0px; color: #3F5D45; }
+
+.product-list { display: flex; flex-wrap: wrap; width: 620px; justify-content: space-between; }
+
+@media (max-width: 940px) { .product-list { width: 940px; margin: 0 auto; max-width: 90%; } }
+
+@media (max-width: 768px) { .product-list { flex-direction: column; } }
+
+.product-list li { position: relative; width: 300px; display: flex; flex-direction: column; margin-bottom: 20px; }
+
+@media (max-width: 940px) { .product-list li { width: 940px; max-width: 47%; margin-bottom: 30px; } }
+
+@media (max-width: 768px) { .product-list li { max-width: 100%; } }
+
+@media (max-width: 940px) { .product-list li .dessert { width: 940px; max-width: 100%; height: auto; } }
+
+.product-list .info { display: flex; }
+
+.product-list .info h3 { text-align: center; font-size: 20px; line-height: 28px; padding: 14px 0px 14px 0px; border: 1px #EAF0ED solid; width: 60%; color: #3F5D45; }
+
+.product-list .info span { text-align: center; font-size: 20px; line-height: 28px; padding: 14px 0px 14px 0px; border: 1px #EAF0ED solid; width: 40%; color: #3F5D45; }
+
+.product-list .cart { text-align: center; color: #3F5D45; background: #EAF0ED; width: 100%; font-size: 24px; line-height: 33px; font-weight: bold; padding: 16px 0px; }
+
+.product-list .cart:hover { background: #3F5D45; color: #EAF0ED; }
+
+.product-list .today { position: absolute; left: 20px; color: #EAF0ED; background: #3F5D45; font-size: 16px; letter-spacing: 5px; padding: 10px; writing-mode: vertical-lr; }
+
+.product-list .favorite { position: absolute; right: 20px; top: 16px; }
+
+.page { display: flex; justify-content: flex-end; margin-bottom: 30px; }
+
+@media (max-width: 940px) { .page { margin-right: 40px; } }
+
+.page li { border: 1px #EAF0ED solid; }
+
+.page .num { display: block; color: #3F5D45; font-size: 20px; line-height: 28px; padding: 16px 26px; }
+
+.page .num:hover { background: #3F5D45; color: #EAF0ED; }
+
+.page .arrow { display: block; padding: 18px; }
+
+.page .arrow:hover { background: #EAF0ED; }
+/*# sourceMappingURL=index.css.map */

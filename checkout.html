@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true"
+                alt="dehaze" class="dehaze">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/a3ed9441c2522e2b8edb35a9847121eb3e6af16e/student-week1/logo-all-dark.svg"
+                alt="logo" class="logo">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-lg-dark.svg"
+                alt="logo" class="logo-mobile">
+            <ul class="nav">
+                <li><a href="#" class="nav-text">首頁</a></li>
+                <li><a href="index.html" class="nav-text">甜點</a></li>
+                <li><a href="#" class="nav-text">登入</a></li>
+                <li><a href="checkout.html" class="nav-img"><img
+                            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
+                            alt="cart"></a></li>
+            </ul>
+        </div>
+
+        <!--客製化開始-->
+        <div class="content">
+            <div class="check">
+                <div class="title">
+                    <h2>發票</h2>
+                    <ul>
+                        <li><img src="https://l8912055722.github.io/w5-invoice/images/Check-whi.svg" alt=""> </li>
+                        <hr>
+                        <li><img src="https://l8912055722.github.io/w5-invoice/images/Check-whi.svg" alt=""></li>
+                        <hr>
+                        <li><img src="https://l8912055722.github.io/w5-invoice/images/Check-circle.svg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="option">
+                    <h3 class="electronic">電子發票</h3>
+                    <h3 class="post"><a href="#">郵寄發票</a></h3>
+                </div>
+                <form action="checkout.html" class="check-place">
+                    <label for="mail">
+                        <h2>電子郵件信箱</h2>
+                        <input type="text" name="mail" id="mail" class="mail" placeholder="example@email.com">
+                    </label>
+                    <label for="num">
+                        <h2>統一編號（選填）</h2>
+                        <input type="text" name="num" id="num" class="num" placeholder="12345678">
+                    </label>
+                    <input type="submit" value="確認結帳" class="submit">
+                </form>
+                
+            </div>
+
+            <div class="buy">
+                <div class="summary">
+                    <h2>訂單摘要</h2>
+                    <div class="detail">
+                        <ul class="text">
+                            <li>小計</li>
+                            <li>運費</li>
+                            <li class="total">總計</li>
+                        </ul>
+                        <ul class="price">
+                            <li>NT$ 2,700</li>
+                            <li>NT$ 300</li>
+                            <li class="total">NT$ 3,000</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list">
+                    <h2>購物清單</h2>
+                    <ul class="item">
+                        <li>
+                            <div class="img-place">
+                                <img src="https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60"
+                                    alt="" class="img-1">
+                            </div>
+                            <div class="text">
+                                <h3>焦糖馬卡龍 (2)</h3>
+                                <span>NT$ 900</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-place">
+                                <img src="https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60"
+                                    alt="" class="img-2">
+                            </div>
+                            <div class="text">
+                                <h3>焦糖馬卡龍 (2)</h3>
+                                <span>NT$ 900</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-place">
+                                <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5d2452cace2ee90c9781c7a39c9a30cf&auto=format&fit=crop&w=800&q=60"
+                                    alt="" class="img-3">
+                            </div>
+                            <div class="text">
+                                <h3>焦糖馬卡龍 (2)</h3>
+                                <span>NT$ 900</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    
+    <!--客製化結束-->
+    </div>
+
+    <div class="subscribe">
+        <div class="subscribe-left">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logo-light.svg"
+                alt="logo">
+            <h2>訂閱你我的甜蜜郵件</h2>
+        </div>
+        <form action="index.html" class="subscribe-right">
+            <input type="text" name="mail" class="mail">
+            <input type="image" name="btn" class="btn"
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png">
+        </form>
+    </div>
+    <div class="footer">
+        <div class="footer-left">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg"
+                alt="logo" class="footer-logo">
+
+            <div class="contact">
+                <ul class="text">
+                    <li>07-1234-5678</li>
+                    <li>sweetaste@email.com</li>
+                    <li>800 高雄市新興區幸福路 520 號</li>
+                </ul>
+                <ul class="icon">
+                    <li><a href="#"><img
+                                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-line%40.svg"
+                                alt="line"></a></li>
+                    <li><a href="#"><img
+                                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-facebook.svg"
+                                alt="fb"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-right">
+            <h2>今天是個—<br>&nbsp;吃甜點的好日子。</h2>
+            <span>© 2018 Sweetaste* All Rights Reserved</span>
+        </div>
+    </div>
+</body>
+
+</html>
